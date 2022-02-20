@@ -1,0 +1,21 @@
+.dialogsPage {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+
+.dialogs {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+}
+
+.messages {
+
+}
+
+.newMessageBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}

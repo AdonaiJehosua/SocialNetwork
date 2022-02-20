@@ -1,0 +1,16 @@
+.friend {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.friendAvatar {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+}
+
+.friendName {
+    color: cornflowerblue;
+}

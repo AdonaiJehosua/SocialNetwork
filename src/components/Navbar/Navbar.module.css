@@ -1,0 +1,27 @@
+.navLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navBar {
+    grid-area: nav;
+    padding: 10px;
+    box-shadow: inset 0px 0px 10px 5px cornflowerblue;
+    border-radius: 10px;
+}
+
+.item {
+    color: cornflowerblue;
+    text-decoration: none;
+}
+
+.activeLink {
+    color: gold;
+    text-decoration: none;
+}
+
+.friend {
+
+}

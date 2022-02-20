@@ -1,0 +1,17 @@
+.friendsBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+
+}
+
+.friends {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.friendsBlockHeader {
+    color: cornflowerblue;
+}
