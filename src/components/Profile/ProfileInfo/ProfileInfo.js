@@ -1,6 +1,7 @@
 import classes from "./ProfileInfo.module.css";
 import ContentImage from "../../../img/ContentImage.jpg";
 import Preloader from "../../common/Preloader/Preloader";
+import ProfileStatus from "./ProfileStatus";
 
 
 const ProfileInfo = (props) => {
@@ -10,9 +11,10 @@ const ProfileInfo = (props) => {
 
     return (
         <div>
-            <img alt={'ProfileImage'} className={classes.profile_img} src={ContentImage}/>
+            {/*<img alt={'ProfileImage'} className={classes.profile_img} src={ContentImage}/>*/}
             <div className={classes.description}>
                 <img src={props.profile.photos.large}/>
+                <ProfileStatus status={props.status} updateStatus={props.updateStatus}/>
                 <div>
                 <h2>{props.profile.fullName}</h2>
                 <div>{props.profile.aboutMe}</div>
@@ -21,6 +23,7 @@ const ProfileInfo = (props) => {
                     <div>{props.profile.lookingForAJobDescription}</div>
 
                 </div>
+                    <div>{props.profile.userId}</div>
                 <div>
                     <h3>Contacts</h3>
                     <a href={'##'}>{props.profile.contacts.facebook}</a>

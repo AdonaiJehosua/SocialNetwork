@@ -1,17 +1,13 @@
 import React from "react";
 import classes from "./Users.module.css";
 import Avatar from "../../img/Avatar.png";
-import Navbar from "../Navbar/Navbar";
 import {NavLink} from "react-router-dom";
 
 let Users = (props) => {
 
     let pagesCount = Math.ceil(props.totalUsersCount / props.pageSize);
     let pages = [];
-    for (let i = 1; i <= pagesCount; i++) {
-        pages.push(i)
-    }
-
+    for (let i = 1; i <= pagesCount; i++) {pages.push(i)}
     return (
         <div>
             <div>
@@ -32,12 +28,12 @@ let Users = (props) => {
                     </div>
                     <div>
                         {u.followed
-                            ? <button onClick={() => {
-                                props.unfollow(u.id)
-                            }}>Unfollow</button>
-                            : <button onClick={() => {
-                                props.follow(u.id)
-                            }}>Follow</button>}
+                            ? <button disabled={props.followindInProgress.some(id => id === u.id)}
+                                      onClick={() => {props.unfollow(u.id)}}>
+                                Unfollow</button>
+                            : <button disabled={props.followindInProgress.some(id => id === u.id)}
+                                      onClick={() => {props.follow(u.id)}}>
+                                Follow</button>}
                     </div>
                 </span>
                     <span>
