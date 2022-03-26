@@ -47,6 +47,18 @@ export const authAPI = {
     me () {
         return instanceSSN.get(`auth/me`)
             .then(response => response.data)
+    },
+    login (email, password, rememberMe = false) {
+        return instanceSSN.post(`/auth/login`, {email, password, rememberMe})
+            .then(response => response.data)
+
+    },
+    logout () {
+        return instanceSSN.delete(`/auth/login`)
+            .then(response => response.data)
+
     }
 }
+
+
 

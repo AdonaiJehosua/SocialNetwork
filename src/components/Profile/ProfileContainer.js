@@ -9,20 +9,26 @@ import {compose} from "redux";
 function ProfileContainer(props) {
     let {userId} = useParams()
     if (!userId) {
-        userId = '22653'
+        userId = props.autorizedUserId
     }
 
     useEffect(() => {
         props.getProfile(userId);
         props.getStatus(userId);
+
     })
-    return <Profile {...props} profile={props.profile} status={props.status} updateStatus={props.updateStatus}/>
+    return <Profile {...props} profile={props.profile}
+                    status={props.status}
+                    updateStatus={props.updateStatus}/>
 }
 
 let mapStateToProps = (state) => {
     return {
         profile: state.profilePage.profile,
-        status: state.profilePage.status
+        status: state.profilePage.status,
+        autorizedUserId: state.auth.userId,
+        isAuth: state.auth.isAuth
+
     }
 }
 export default compose (
