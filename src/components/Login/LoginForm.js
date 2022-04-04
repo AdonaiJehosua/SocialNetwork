@@ -50,7 +50,7 @@ const LoginForm = (props) => {
                                placeholder={'enter password'}/>
                         {errors.password && touched.password && errors.password}
                     </div>
-                    <input name={'rememberMe'} type={'checkbox'}/> Remember
+                    <input name={'rememberMe'} type={'checkbox'}/> Remember me
                     <div>
                         {values.general ? <span>{values.general}</span> : null}
                     </div>

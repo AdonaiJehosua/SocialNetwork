@@ -4,7 +4,7 @@ import Avatar from "../../img/Avatar.png";
 import {NavLink} from "react-router-dom";
 
 let Users = (props) => {
-
+    console.log('yo')
     let pagesCount = Math.ceil(props.totalUsersCount / props.pageSize);
     let pages = [];
     for (let i = 1; i <= pagesCount; i++) {pages.push(i)}
