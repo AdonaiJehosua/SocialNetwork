@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/SRNET/static/css/main.ff8efa5d.css",
+    "main.js": "/SRNET/static/js/main.863bc25d.js",
+    "static/css/63.4e583e93.chunk.css": "/SRNET/static/css/63.4e583e93.chunk.css",
+    "static/js/63.8aa74cea.chunk.js": "/SRNET/static/js/63.8aa74cea.chunk.js",
+    "static/css/870.a04d17de.chunk.css": "/SRNET/static/css/870.a04d17de.chunk.css",
+    "static/js/870.ebc1b62c.chunk.js": "/SRNET/static/js/870.ebc1b62c.chunk.js",
+    "static/css/102.eb432be6.chunk.css": "/SRNET/static/css/102.eb432be6.chunk.css",
+    "static/js/102.3dc6cd89.chunk.js": "/SRNET/static/js/102.3dc6cd89.chunk.js",
+    "static/js/787.e79da3d8.chunk.js": "/SRNET/static/js/787.e79da3d8.chunk.js",
+    "static/media/ContentImage.jpg": "/SRNET/static/media/ContentImage.55fc0b3ecee35e1ade28.jpg",
+    "static/media/Preloader.gif": "/SRNET/static/media/Preloader.ba14ef100d3dc845a965.gif",
+    "static/media/Avatar.png": "/SRNET/static/media/Avatar.38683251bbcf91ec551f.png",
+    "index.html": "/SRNET/index.html",
+    "main.ff8efa5d.css.map": "/SRNET/static/css/main.ff8efa5d.css.map",
+    "main.863bc25d.js.map": "/SRNET/static/js/main.863bc25d.js.map",
+    "63.4e583e93.chunk.css.map": "/SRNET/static/css/63.4e583e93.chunk.css.map",
+    "63.8aa74cea.chunk.js.map": "/SRNET/static/js/63.8aa74cea.chunk.js.map",
+    "870.a04d17de.chunk.css.map": "/SRNET/static/css/870.a04d17de.chunk.css.map",
+    "870.ebc1b62c.chunk.js.map": "/SRNET/static/js/870.ebc1b62c.chunk.js.map",
+    "102.eb432be6.chunk.css.map": "/SRNET/static/css/102.eb432be6.chunk.css.map",
+    "102.3dc6cd89.chunk.js.map": "/SRNET/static/js/102.3dc6cd89.chunk.js.map",
+    "787.e79da3d8.chunk.js.map": "/SRNET/static/js/787.e79da3d8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff8efa5d.css",
+    "static/js/main.863bc25d.js"
+  ]
+}
