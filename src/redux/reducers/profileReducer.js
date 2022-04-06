@@ -1,4 +1,4 @@
-import {profileAPI, usersAPI} from "../../API/api";
+import {profileAPI} from "../../API/api";
 
 const ADD_POST = 'ADD-POST';
 const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
@@ -21,7 +21,6 @@ export const profileReducer = (state = initialState, action) => {
 
     switch (action.type) {
         case ADD_POST:
-            let post = {id: 5, postmessage: state.newPostText, likesCount: 0};
             return {...state,
                 postsData: [...state.postsData, {id: 5, postmessage: state.newPostText, likesCount: 0}],
                 newPostText: ''};

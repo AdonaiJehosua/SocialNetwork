@@ -2,28 +2,17 @@ import React from "react";
 import classes from "./Users.module.css";
 import Avatar from "../../img/Avatar.png";
 import {NavLink} from "react-router-dom";
+import Paginator from "../common/Paginator/Paginator";
 
-let Users = (props) => {
-    console.log('yo')
-    let pagesCount = Math.ceil(props.totalUsersCount / props.pageSize);
-    let pages = [];
-    for (let i = 1; i <= pagesCount; i++) {pages.push(i)}
+let Users = ({currentPage, totalUsersCount, pageSize, onPageChanged, ...props}) => {
     return (
         <div>
-            <div>
-                {pages.map(p => {
-                    return <span className={props.currentPage === p && classes.selected}
-                                 onClick={(e) => {
-                                     props.onPageChanged(p)
-                                 }}>{p}</span>
-                })}
-            </div>
-            {
-                props.usersData.map(u => <div key={u.id}>
+            <Paginator currentPage={currentPage} totalUsersCount={totalUsersCount} pageSize={pageSize} onPageChanged={onPageChanged}/>
+            {props.usersData.map(u => <div key={u.id}>
                 <span>
                     <div>
                         <NavLink to={'/profile/' + u.id}>
-                            <img className={classes.userImage} src={u.photos.small ? u.photos.small : Avatar}/>
+                            <img alt={''} className={classes.userImage} src={u.photos.small ? u.photos.small : Avatar}/>
                         </NavLink>
                     </div>
                     <div>
@@ -42,8 +31,8 @@ let Users = (props) => {
                     <span>
                     <div>{'u.location.city'}</div><div>{'u.location.country'}</div>
                 </span>
-                </div>)
-            }
+                </div>
+            )}
         </div>
     )
 }
