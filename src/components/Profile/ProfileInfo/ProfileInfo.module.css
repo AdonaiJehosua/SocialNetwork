@@ -10,3 +10,16 @@
     display: flex;
     flex-direction: row;
 }
+
+.avatarBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.userAvatar {
+    max-height: 300px;
+}
+
+.changeAvatar {
+
+}

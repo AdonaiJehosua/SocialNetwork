@@ -7,7 +7,7 @@ function Profile(props) {
 
     return (
         <div className={classes.main}>
-            <ProfileInfo profile={props.profile} status={props.status} updateStatus={props.updateStatus}/>
+            <ProfileInfo savePhoto={props.savePhoto} profile={props.profile} status={props.status} updateStatus={props.updateStatus} saveProfile={props.saveProfile}/>
             <MyPostsContainer />
         </div>
     )

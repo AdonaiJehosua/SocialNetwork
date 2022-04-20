@@ -3,7 +3,7 @@ import FriendItem from "./FriendItem/FriendItem";
 
 const FriendsBlock = (props) => {
 
-    let friendElements = props.friendsData.map(friend => <FriendItem name={friend.name} avatar={friend.avatar}/>)
+    let friendElements = props.friendsData.map(friend => <FriendItem key={friend} name={friend.name} avatar={friend.avatar}/>)
 
     return (
         <div className={classes.friendsBlock}>

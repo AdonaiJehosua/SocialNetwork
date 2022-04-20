@@ -9,7 +9,6 @@ const Login = (props) => {
     const onSubmit = (values, {setFieldValue, setSubmitting}) => {
         props.login(values.login, values.password, values.rememberMe, setFieldValue, setSubmitting);
         setSubmitting(true)
-
     }
     if (props.isAuth) {
        return <Navigate to={'/profile'}/>
