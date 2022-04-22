@@ -58,7 +58,7 @@ const LoginForm = (props) => {
                     </div>
                     <div>
                         <div>
-                            {props.captchaUrl && <img alt={'captcha image'} src={props.captchaUrl}/>}
+                            {props.captchaUrl && <img alt={'captcha'} src={props.captchaUrl}/>}
                         </div>
                         {props.captchaUrl && <input name={'captcha'}
                                                     type={'text'}
