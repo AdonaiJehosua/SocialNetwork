@@ -62,17 +62,23 @@ export const authAPI = {
         return instanceSSN.get(`auth/me`)
             .then(response => response.data)
     },
-    login(email, password, rememberMe = false) {
-        return instanceSSN.post(`/auth/login`, {email, password, rememberMe})
+    login(email, password, rememberMe = false, captcha = '') {
+        return instanceSSN.post(`auth/login`, {email, password, rememberMe, captcha})
             .then(response => response.data)
 
     },
     logout() {
-        return instanceSSN.delete(`/auth/login`)
+        return instanceSSN.delete(`auth/login`)
             .then(response => response.data)
 
     }
 }
 
+export const secyrityAPI = {
+    getCaptchaUrl() {
+        return instanceSSN.get('security/get-captcha-url')
+            .then(response => response)
+    }
+}
 
 
