@@ -16,7 +16,7 @@ const LoginForm = (props) => {
                 if (props.captchaUrl && !values.captcha) {
                     errors.captcha = 'Enter captcha'
                 }
-                if (values.password && values.password.length < 8) {
+                if (values.password && values.password.length < 4) {
                     errors.password = 'password must contain at least 8 characters'
                 }
                 return errors
